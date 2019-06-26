@@ -2504,7 +2504,7 @@ h2 + p {
   }
 }
 
-@media only screen and (max-height: 565px) {
+@media only screen and (max-height: 500px) {
   .main-row {
     padding: 60px 0 0;
   }
