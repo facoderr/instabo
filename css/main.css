@@ -84,6 +84,51 @@ input::placeholder, textarea::placeholder {
 
 /* -- End Reset -- */
 /* -- Fonts -- */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+  src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"), url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/RubikRegular/RubikRegular.eot");
+  src: url("../fonts/RubikRegular/RubikRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikRegular/RubikRegular.woff") format("woff"), url("../fonts/RubikRegular/RubikRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  src: url("../fonts/RubikMedium/RubikMedium.eot");
+  src: url("../fonts/RubikMedium/RubikMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RubikMedium/RubikMedium.woff") format("woff"), url("../fonts/RubikMedium/RubikMedium.ttf") format("truetype");
+}
+
 /* -- End Fonts -- */
 /* -- Preloader -- */
 .preloader {
