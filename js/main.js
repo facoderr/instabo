@@ -46,8 +46,11 @@ $(document).ready(function() {
 		return $(result);
 	}
 	$(window).bind('scroll', function() {
-		var InWindow = inWindow('.animated');
-		InWindow.removeClass('animated');
+		$('.animated').each(function() {
+			if ($(document).scrollTop() >= $(this).offset().top - 700) {
+				$(this).removeClass('animated');
+			}
+		});
 	});
 	$(document).on('click', '.js-anchor', function() {
 		var id = $(this).attr('href');
