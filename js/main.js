@@ -87,6 +87,12 @@ $(document).ready(function() {
 	$(window).on('load', function() {
 		$('.pulse').fadeOut();
 		$('.preloader').delay(400).fadeOut('slow');
+		var vhFix = new VHChromeFix([
+			{
+				selector: '.main-row',
+				vh: 100
+			}
+		]);
 		setTimeout(function() {
 			$('.animated').each(function() {
 				if ($(document).scrollTop() >= $(this).offset().top - 600) {
