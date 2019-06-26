@@ -877,6 +877,8 @@ h2 + p {
       -ms-flex-flow: column;
           flex-flow: column;
   height: 100vh;
+  height: -webkit-calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100);
   text-align: center;
   padding: 20px 0 0;
 }

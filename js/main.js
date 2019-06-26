@@ -87,6 +87,8 @@ $(document).ready(function() {
 	$(window).on('load', function() {
 		$('.pulse').fadeOut();
 		$('.preloader').delay(400).fadeOut('slow');
+		let vh = window.innerHeight * 0.01;
+		document.documentElement.style.setProperty('--vh', `${vh}px`);
 		setTimeout(function() {
 			$('.animated').each(function() {
 				if ($(document).scrollTop() >= $(this).offset().top - 600) {
