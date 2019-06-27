@@ -289,6 +289,9 @@ h2 + p {
   background: #fff;
   border: none;
   border-bottom: 2px solid #333;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  -webkit-appearance: none;
   padding: 0;
 }
 
@@ -360,6 +363,7 @@ h2 + p {
   -webkit-border-radius: 30px;
           border-radius: 30px;
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 }
 
 .btn:before, .btn:after {
@@ -726,7 +730,6 @@ h2 + p {
           border-radius: 50%;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
-  overflow: hidden;
 }
 
 .head-toggle:after {
@@ -760,6 +763,7 @@ h2 + p {
 }
 
 .head-toggle.active .head-toggle-bar {
+  fill: #fff;
   opacity: 0;
   visibility: hidden;
   -webkit-transform: rotate(180deg);
@@ -813,7 +817,9 @@ h2 + p {
 }
 
 .head-contacts {
+  position: relative;
   text-align: right;
+  z-index: -1;
 }
 
 .head-phone {
