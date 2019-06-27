@@ -196,6 +196,11 @@ input::placeholder, textarea::placeholder {
 /* -- General -- */
 html {
   overflow-x: hidden;
+  width: 100vw;
+}
+
+html.overflow {
+  overflow: hidden;
 }
 
 body {
@@ -817,9 +822,9 @@ h2 + p {
 }
 
 .head-contacts {
-  position: relative;
   text-align: right;
-  z-index: -1;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .head-phone {
@@ -857,6 +862,7 @@ h2 + p {
 /* -- Main -- */
 .main {
   position: relative;
+  display: block;
   background: url("../img/main_bg_x3.jpg") no-repeat center;
   background-size: cover;
 }
@@ -2107,6 +2113,10 @@ h2 + p {
   .head-toggle-close {
     width: 15px;
     height: 15px;
+  }
+  .head-contacts.active {
+    opacity: 0;
+    visibility: hidden;
   }
   .main {
     background: url("../img/main_bg_x1.jpg") no-repeat center;

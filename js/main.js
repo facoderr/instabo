@@ -4,8 +4,10 @@ $(document).ready(function() {
 	// Click Event
 
 	$(document).on('click', '.js-toggle', function() {
-		$(this).toggleClass('active');
+		$('html').toggleClass('overflow');
 		$('.nav').toggleClass('open');
+		$(this).toggleClass('active');
+		$('.head-contacts').toggleClass('active');
 	});
 	$(document).on('click', '.js-popup', function() {
 		$('.popup').addClass('open');
@@ -23,8 +25,10 @@ $(document).ready(function() {
 		$('.input').removeClass('focus');
 		$('.input').removeClass('error');
 		if ($(e.target).closest('.popup-form').length || $(e.target).closest('.js-toggle').length || $(e.target).closest('.nav-row').length) return;
-		$('.js-toggle').removeClass('active');
+		$('html').removeClass('overflow');
 		$('.nav').removeClass('open');
+		$('.js-toggle').removeClass('active');
+		$('.head-contacts').removeClass('active');
 		$('.popup').removeClass('open');
 	});
 
@@ -56,8 +60,10 @@ $(document).ready(function() {
 		var id = $(this).attr('href');
 				scroll = $(id).offset().top;
 		if ($('.nav').hasClass('open')) {
-			$('.js-toggle').removeClass('active');
+			$('html').removeClass('overflow');
 			$('.nav').removeClass('open');
+			$('.js-toggle').removeClass('active');
+			$('.head-contacts').removeClass('active');
 		}
 		$('html, body').animate({
 			scrollTop: scroll
