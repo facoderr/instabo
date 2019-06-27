@@ -2094,6 +2094,12 @@ h2 + p {
     width: 45px;
     height: 45px;
   }
+  .head-toggle:hover {
+    background: transparent;
+  }
+  .head-toggle:hover .head-toggle-bar {
+    fill: #fff;
+  }
   .head-toggle-bar {
     width: 21px;
     height: 21px;
