@@ -15,25 +15,33 @@ $(document).ready(function() {
 			var success = $(this).find('.js-data-success').html();
 			$('.js-success-title').html(success);
 		});
+		$('.js-success-btn').removeClass('btn-space btn-sea btn-fire');
+		$('.js-success-btn').addClass('btn-fire');
 	});
 	$(document).on('click', '.js-price', function() {
 		var price = $(this).parent().find('.price-box-title').text();
-		if ($(this).hasClass('btn-space')) {
-			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
-			$('.js-price-btn').addClass('btn-space');
-		} else if ($(this).hasClass('btn-sea')) {
-			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
-			$('.js-price-btn').addClass('btn-sea');
-		} else {
-			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
-			$('.js-price-btn').addClass('btn-fire');
-		}
 		$('.js-price-title').html(price);
 		$('.js-popup-price').addClass('open');
 		$('.js-popup-price').each(function() {
 			var success = $(this).find('.js-data-success').html();
 			$('.js-success-title').html(success);
 		});
+		if ($(this).hasClass('btn-space')) {
+			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-success-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-price-btn').addClass('btn-space');
+			$('.js-success-btn').addClass('btn-space');
+		} else if ($(this).hasClass('btn-sea')) {
+			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-success-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-price-btn').addClass('btn-sea');
+			$('.js-success-btn').addClass('btn-sea');
+		} else {
+			$('.js-price-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-success-btn').removeClass('btn-space btn-sea btn-fire');
+			$('.js-price-btn').addClass('btn-fire');
+			$('.js-success-btn').addClass('btn-fire');
+		}
 	});
 	$(document).on('click', '.js-close', function() {
 		$('.popup').removeClass('open');
@@ -41,6 +49,8 @@ $(document).ready(function() {
 	$(document).on('click', '.js-callback', function() {
 		var success = $(this).find('.js-data-success').html();
 		$('.js-success-title').html(success);
+		$('.js-success-btn').removeClass('btn-space btn-sea btn-fire');
+		$('.js-success-btn').addClass('btn-fire');
 	});
 	$(document).on('click', '.input input', function() {
 		$('.input').removeClass('focus');
