@@ -1431,6 +1431,10 @@ h2 + p {
   margin: 20px auto 0;
 }
 
+.callback-data {
+  display: none;
+}
+
 /* -- End Callback -- */
 /* -- Popup -- */
 .popup {

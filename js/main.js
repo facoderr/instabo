@@ -39,10 +39,8 @@ $(document).ready(function() {
 		$('.popup').removeClass('open');
 	});
 	$(document).on('click', '.js-callback', function() {
-		$('.js-popup-call').each(function() {
-			var success = $(this).find('.js-data-success').html();
-			$('.js-success-title').html(success);
-		});
+		var success = $(this).find('.js-data-success').html();
+		$('.js-success-title').html(success);
 	});
 	$(document).on('click', '.input input', function() {
 		$('.input').removeClass('focus');
