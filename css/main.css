@@ -398,14 +398,14 @@ h2 + p {
   z-index: 1;
 }
 
-.btn:hover:before {
+.btn:hover:before, .btn:focus:before {
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
 }
 
-.btn:hover:after {
+.btn:hover:after, .btn:focus:after {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   -webkit-transform: translateX(-100%);
