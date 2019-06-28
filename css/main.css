@@ -1465,13 +1465,13 @@ h2 + p {
   visibility: visible;
 }
 
-.popup.open .popup-form {
+.popup.open .popup-form, .popup.open .popup-price, .popup.open .popup-success {
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
 }
 
-.popup-form {
+.popup-form, .popup-price, .popup-success {
   position: relative;
   width: 610px;
   text-align: center;
@@ -1488,16 +1488,69 @@ h2 + p {
   padding: 70px 105px 80px;
 }
 
-.popup-form .input {
+.popup-form .input, .popup-price .input, .popup-success .input {
   margin: 0 0 30px;
 }
 
-.popup-form .input input {
+.popup-form .input input, .popup-price .input input, .popup-success .input input {
   font-size: 18px;
 }
 
-.popup-form .btn {
+.popup-form .btn, .popup-price .btn, .popup-success .btn {
+  width: 250px;
   margin: 50px auto 0;
+}
+
+.popup-price, .popup-success {
+  width: 820px;
+}
+
+.popup-form .popup-title p, .popup-price .popup-title p {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.popup-price form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-flow: wrap;
+      -ms-flex-flow: wrap;
+          flex-flow: wrap;
+}
+
+.popup-price .input {
+  width: 285px;
+}
+
+.popup-price .btn {
+  width: 300px;
+  margin: 30px auto 0;
+}
+
+.popup-success {
+  padding: 70px 105px 80px;
+}
+
+.popup-success .popup-title h3 {
+  line-height: 1.375;
+  letter-spacing: -.2px;
+}
+
+.popup-success .popup-title p {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.popup-success .btn {
+  font-size: 18px;
+  letter-spacing: .18px;
+  margin: 40px auto 0;
 }
 
 .popup-title {
@@ -1563,6 +1616,10 @@ h2 + p {
   display: inline-block;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+}
+
+.popup-data {
+  display: none;
 }
 
 /* -- End Popup -- */
@@ -1969,11 +2026,31 @@ h2 + p {
     width: 220px;
     margin: 0 0 30px;
   }
-  .popup-form {
+  .popup-form, .popup-price, .popup-success {
     width: 588px;
     -webkit-border-radius: 30px;
             border-radius: 30px;
     padding: 65px 94px 70px;
+  }
+  .popup-form .btn, .popup-price .btn, .popup-success .btn {
+    width: 226px;
+  }
+  .popup-price .input {
+    width: 100%;
+  }
+  .popup-price .btn {
+    width: 246px;
+  }
+  .popup-success {
+    padding: 65px 60px 70px;
+  }
+  .popup-success .popup-title h3 {
+    letter-spacing: -.16px;
+  }
+  .popup-success .btn {
+    font-size: 15px;
+    letter-spacing: .15px;
+    margin: 30px auto 0;
   }
   .popup-title h3 {
     font-size: 32px;
@@ -2351,19 +2428,26 @@ h2 + p {
             order: 5;
     margin: 17px auto 0;
   }
-  .popup-form {
+  .popup-form, .popup-price, .popup-success {
     width: 100%;
     padding: 50px 30px;
     margin: 0 20px;
   }
-  .popup-form .input {
+  .popup-form .input, .popup-price .input, .popup-success .input {
     margin: 0 0 18px;
   }
-  .popup-form .input input {
+  .popup-form .input input, .popup-price .input input, .popup-success .input input {
     font-size: 16px;
   }
-  .popup-form .btn {
+  .popup-form .btn, .popup-price .btn, .popup-success .btn {
     margin: 35px auto 0;
+  }
+  .popup-price .btn {
+    margin: 15px auto 0;
+  }
+  .popup-success .popup-title h3 {
+    line-height: 1.23;
+    letter-spacing: -.13px;
   }
   .popup-title {
     margin: 0 0 20px;

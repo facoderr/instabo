@@ -73,7 +73,7 @@
 				</a>
 				<div class="head-contacts">
 					<a href="tel:+88005554433" class="head-phone">8-800-555-44-33</a>
-					<a href="javascript:void(0);" class="head-call btn js-popup">
+					<a href="javascript:void(0);" class="head-call btn js-call">
 						Заказать звонок
 					</a>
 				</div>
@@ -107,6 +107,9 @@
 					<img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' stroke='rgb(255, 255, 255)' stroke-width='1.49px' stroke-linecap='round' stroke-linejoin='miter' fill='none' viewBox='0 0 48.235 19.235'%3E%3Cpath d='M1.745,1.744 L23.679,16.745 L45.745,1.744'/%3E%3C/svg%3E">
 				</a>
 			</div>
+		</div>
+		<div class="main-bg">
+			
 		</div>
 	</main>
 	<!-- End Main -->
@@ -191,9 +194,7 @@
 			</div>
 			<div class="price-row animated fadeUp">
 				<div class="price-box">
-					<div class="price-box-title">
-						Standart
-					</div>
+					<div class="price-box-title">Standart</div>
 					<div class="price-box-day">На 30 дней</div>
 					<ul class="price-box-list">
 						<li>
@@ -213,14 +214,12 @@
 					<div class="price-box-cost">
 						3 790 ₽
 					</div>
-					<a href="#callback" class="price-box-btn btn btn-space js-anchor">
+					<a href="javascript:void(0);" class="price-box-btn btn btn-space js-price">
 						<span>Отправить заявку</span>
 					</a>
 				</div>
 				<div class="price-box">
-					<div class="price-box-title">
-						Business
-					</div>
+					<div class="price-box-title">Business</div>
 					<div class="price-box-day">На 30 дней</div>
 					<ul class="price-box-list">
 						<li>
@@ -240,14 +239,12 @@
 					<div class="price-box-cost">
 						6 390 ₽
 					</div>
-					<a href="#callback" class="price-box-btn btn btn-sea js-anchor">
+					<a href="javascript:void(0);" class="price-box-btn btn btn-sea js-price">
 						<span>Отправить заявку</span>
 					</a>
 				</div>
 				<div class="price-box">
-					<div class="price-box-title">
-						Premium
-					</div>
+					<div class="price-box-title">Premium</div>
 					<div class="price-box-day">На 30 дней</div>
 					<ul class="price-box-list">
 						<li>
@@ -267,7 +264,7 @@
 					<div class="price-box-cost">
 						9 990 ₽
 					</div>
-					<a href="#callback" class="price-box-btn btn btn-fire js-anchor">
+					<a href="javascript:void(0);" class="price-box-btn btn btn-fire js-price">
 						<span>Отправить заявку</span>
 					</a>
 				</div>
@@ -372,7 +369,7 @@
 	<!-- End Features -->
 
 	<!-- Callback -->
-	<section id="callback" class="callback">
+	<section id="callback" class="callback js-callback">
 		<div class="container">
 			<div class="callback-row">
 				<div class="callback-title animated fadeUp">
@@ -420,7 +417,7 @@
 				</a>
 				<div class="foot-contacts">
 					<a href="tel:+88005554433" class="foot-phone">8-800-555-44-33</a>
-					<a href="javascript:void(0);" class="foot-call js-popup">
+					<a href="javascript:void(0);" class="foot-call js-call">
 						заказать звонок
 					</a>
 				</div>
@@ -437,7 +434,7 @@
 	<!-- End Footer -->
 
 	<!-- Popup -->
-	<div class="popup">
+	<div class="popup js-popup-call">
 		<div class="popup-form">
 			<div class="popup-title">
 				<h3>Заказать звонок</h3>
@@ -458,6 +455,67 @@
 					<span>Отправить</span>
 				</button>
 			</form>
+			<a href="javascript:void(0);" class="popup-close js-close"></a>
+			<div class="popup-data js-data-success">
+				<h3>
+					Вы успешно оставили заявку
+					на обратный звонок!
+				</h3>
+				<p>
+					В ближайшее время наш менеджер свяжется с вами.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup js-popup-price">
+		<div class="popup-price">
+			<div class="popup-title">
+				<h3>
+					Тариф «<span class="js-price-title">Standart</span>»
+				</h3>
+				<p>
+					Оставьте заявку, и с вами свяжется наш
+					менеджер для согласования деталей заказа
+				</p>
+			</div>
+			<form action="/">
+				<div class="input">
+					<input type="text" name="name" placeholder="Ваше имя" autocomplete="off">
+				</div>
+				<div class="input">
+					<input type="email" name="mail" placeholder="E-mail*" autocomplete="off" class="js-required">
+					<img src="img/icons/error.svg">
+				</div>
+				<div class="input">
+					<input type="tel" name="phone" placeholder="Телефон*" autocomplete="off" class="js-required">
+					<img src="img/icons/error.svg">
+				</div>
+				<div class="input">
+					<input type="text" name="insta" placeholder="Аккаунт в Instagram" autocomplete="off">
+				</div>
+				<button type="submit" class="btn btn-space js-price-btn js-submit">
+					<span>Отправить заявку</span>
+				</button>
+			</form>
+			<a href="javascript:void(0);" class="popup-close js-close"></a>
+			<div class="popup-data js-data-success">
+				<h3>
+					Спасибо за Ваш заказ!
+				</h3>
+				<p>
+					Наш специалист по SMM перезвонит вам в ближайшее время,
+					чтобы подробно рассказать о тарифе <span class="js-price-title">Standart</span> и ответить
+					на все возникшие вопросы.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup js-popup-success">
+		<div class="popup-success">
+			<div class="popup-title js-success-title"></div>
+			<button type="button" class="btn btn-fire js-close">
+				<span>закрыть</span>
+			</button>
 			<a href="javascript:void(0);" class="popup-close js-close"></a>
 		</div>
 	</div>
